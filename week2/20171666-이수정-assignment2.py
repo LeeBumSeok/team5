@@ -22,7 +22,7 @@ while True:  # input 값을 int로 제한시켜줌, stack overflow 참조.
         print("Please Enter number 0 or over to start factorial.")
 
 """
-==========2ND WEEK HOMEWORK COMMENT============
+==========2ND WEEK HOMEWORK COMMENT!============
 ++While TRUE 를 사용하지 않기 위하여 while NUM + 1: 를 사용하여 -1이 되는 경우를
 else로 보내려고 했으나, -1 이하의 정수가 들어가는 경우에서 반복문을 끝내지 
 않고 다시 입력받는 방법을 찾지 못했습니다. 5조의 다른 팀원의 코드를 참조하여
