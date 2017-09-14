@@ -42,14 +42,14 @@ def doScoreDB(scdb_total):
                 scdb_total += [record]
             except IndexError:
                 print("이름과 나이, 점수를 입력하세요")
-        elif parse[0] == 'del':                           #미입력시 예외 처리
-            rmlist = []
+        elif parse[0] == 'del': 
+            rmlist = []  # 빈리스트 생성.
             for p in scdb_total:
-                if p['Name'].lower() == parse[1].lower():
-                    rmlist.append(p)
+                if p['Name'].lower() == parse[1].lower():  # 대소문자에 상관없이 del이 실행되도록 함.> 이름이 같으면 모두 지워짐.
+                    rmlist.append(p)  # 입력된 이름과 이름이 같은 person 을 rmlist에 넣어준다.
             for p in rmlist:
-                scdb_total.remove(p)
-            if not(bool(rmlist)):  # 빈 리스트는 false값을 가지므로,, rmlist가 비어있으면 프린트할것.
+                scdb_total.remove(p)   #rmlist에 존재하는 person을 scdb에서 지운다.
+            if not(bool(rmlist)):  # 빈 리스트는 false값을 가지므로,, rmlist가 비어있으면 프린트할것.(입력한 name이 list안에 존재하지 않음)
                 print("There is no person matches with input name") 
         elif parse[0] == 'show':
             sortKey ='Name' if len(parse) == 1 else parse[1]
