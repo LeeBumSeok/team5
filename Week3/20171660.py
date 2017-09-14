@@ -68,8 +68,8 @@ def doScoreDB(scdb_total):
                                 print(k + '=' + v, end=' ')
                                 print()
                         break
-                else:
-                    print("없음")  #이름이 없다면
+                    else:
+                    	print("없음")  #이름이 없다면
             except IndexError:
                 print("이름을 입력하세요")      
                 
