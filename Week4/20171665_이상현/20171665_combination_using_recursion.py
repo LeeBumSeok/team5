@@ -16,6 +16,9 @@ while True:                             #무한 반복 프로그램 생성
                 break
             else:
                 continue
+        elif n < m:
+            print ("n보다 m이 더 큽니다. 다시 입력해주세요.")
+            continue
 
         result = combi(n, m)
 
