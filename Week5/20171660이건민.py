@@ -16,11 +16,9 @@ def iterfibo(n):
     ## 피보나치 수열의 합을 저장할 sum = 0 지정
     sum = 0
     ## 피보나치 수열을 fibo리스트에 저장
-    for i in range(2, n):
+    for i in range(2, n + 1):
         fibolist.append(fibolist[i-1] + fibolist[i-2])
-    ## fibo리스트의 값들을 합
-    for p in range(n-2, n):
-        sum += fibolist[p]
+    sum = fibolist[n]
     return sum
 
 
