@@ -15,8 +15,8 @@ def iterfibo(a):  # 반복구조를 사용한 재귀구조.
         return 0
     elif a <= 2:  # f(1),f(2) == 1.
         return 1
-    else:  # 아닌경우 반복을 통한 피보나치. f(n) = f(n-1) + f(n-2)
-        for i in range(a-1):
+    else:  # 아닌경우 반복을 통한 피보나치. f(n) = f(n - 1) + f(n - 2)
+        for i in range(a - 1):
             rst = t1 + t2
             t2, t1 = t1, rst  # t2 = t1, t1 = rst.
         return rst
